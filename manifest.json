@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Vimium",
-  "version": "1.67.2",
-  "description": "CHNA3 The Hacker's Browser. Vimium provides keyboard shortcuts for navigation and control in the spirit of Vim.",
+  "name": "Vimium Improved",
+  "version": "0.1.0",
+  "description": "Forked vimium project with new and exciting features.",
   "icons": {  "16": "icons/icon16.png",
-              "48": "icons/icon48.png",
-             "128": "icons/icon128.png" },
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png" },
   "minimum_chrome_version": "69.0",
   "background": {
     "scripts": [
@@ -42,26 +42,26 @@
     {
       "matches": ["<all_urls>"],
       "js": ["lib/utils.js",
-             "lib/keyboard_utils.js",
-             "lib/dom_utils.js",
-             "lib/rect.js",
-             "lib/handler_stack.js",
-             "lib/settings.js",
-             "lib/find_mode_history.js",
-             "content_scripts/mode.js",
-             "content_scripts/ui_component.js",
-             "content_scripts/link_hints.js",
-             "content_scripts/vomnibar.js",
-             "content_scripts/scroller.js",
-             "content_scripts/marks.js",
-             "content_scripts/mode_insert.js",
-             "content_scripts/mode_find.js",
-             "content_scripts/mode_key_handler.js",
-             "content_scripts/mode_visual.js",
-             "content_scripts/hud.js",
-             "content_scripts/mode_normal.js",
-             "content_scripts/vimium_frontend.js"
-            ],
+        "lib/keyboard_utils.js",
+        "lib/dom_utils.js",
+        "lib/rect.js",
+        "lib/handler_stack.js",
+        "lib/settings.js",
+        "lib/find_mode_history.js",
+        "content_scripts/mode.js",
+        "content_scripts/ui_component.js",
+        "content_scripts/link_hints.js",
+        "content_scripts/vomnibar.js",
+        "content_scripts/scroller.js",
+        "content_scripts/marks.js",
+        "content_scripts/mode_insert.js",
+        "content_scripts/mode_find.js",
+        "content_scripts/mode_key_handler.js",
+        "content_scripts/mode_visual.js",
+        "content_scripts/hud.js",
+        "content_scripts/mode_normal.js",
+        "content_scripts/vimium_frontend.js"
+      ],
       "css": ["content_scripts/vimium.css"],
       "run_at": "document_start",
       "all_frames": true,
@@ -84,10 +84,5 @@
     "pages/hud.html",
     "pages/help_dialog.html",
     "pages/completion_engines.html"
-  ],
-  "applications": {
-    "gecko": {
-      "id": "chn@fastmail.com"
-    }
-  }
+  ]
 }
